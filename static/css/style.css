@@ -1,0 +1,325 @@
+/* remove default margin and padding from body */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* set map, body, and html to 100% of the screen size */
+#map,
+body,
+html {
+  height: 100%;
+}/* body, html {
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+    background: rgb(201, 207, 212);
+    height: 100%;
+}
+
+.picheader { */
+    /* display: flex; */
+    /* background: url('../css/images/header.jpg') center no-repeat; */
+    /* background-size: cover;
+}
+
+.iframeContainer { */
+    /* padding: 1px; */
+    /* border: 1px solid #e3e3e3;
+}
+
+.modal-dialog .map { */
+    /* width: 950px; */
+    /* margin: auto;
+} */
+
+
+/* MAIN LAYOUT------------------------------------------------ */
+
+h2 {  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Monoton', cursive;
+  font-size: 30pt;
+  color: rgb(54, 53, 61);
+}
+
+h3 {  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Monoton', cursive;
+  font-size: 30pt;
+  color: rgb(54, 53, 61);
+}
+
+* { box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15pt;
+  color: rgb(54, 53, 61);
+}
+
+
+header {
+  grid-area: header;
+  /* background: url('https://stillmed.olympic.org/media/Images/OlympicOrg/IOC/The_Organisation/The-Olympic-Rings/Olympic_rings_TM_c_IOC_All_rights_reserved_1.jpg?interpolation=lanczos-none&resize=1400:*') center no-repeat; */
+  background-size: cover;
+}
+
+aside {
+  grid-area: aside;
+  /* background: url('../css/images/stripes.jpg') center no-repeat; */
+  background-size: cover;
+}
+
+article {
+  grid-area: article;
+  padding: 40px;
+  background: rgb(122, 200, 236);
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+
+footer p{
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  grid-template-rows: 250px auto;
+  grid-template-areas:
+      "header header"
+      "aside article"
+      'aside footer';
+}
+
+/* HEADER LAYOUT------------------------------------------------ */
+
+.empty {
+  grid-area: empty-header;
+}
+
+.weather {
+  grid-area: weather;
+}
+
+.clock {
+  grid-area: clock;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.5fr;
+  /* grid-template-areas:
+      "clock empty-header weather"; */
+}
+
+/* MAIN ARTICLE LAYOUT------------------------------------------------ */
+
+.intro {
+  grid-area: intro;
+}
+
+.map-info {
+  grid-area: map-info;
+  align-self: flex-start;
+}
+
+.map {
+  grid-area: map;
+}
+
+.tweets {
+  grid-area: tweets;
+}
+
+.crimes {
+  grid-area: shots;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1.7fr 0.5fr 1.7fr;
+  grid-gap: 15px;
+  grid-template-areas:
+  "intro intro intro"
+  "map-info map map"
+  "tweets tweets tweets"
+  "crimes crimes crimes";
+}
+
+/* MEDIA QUERY LAYOUT------------------------------------------------ */
+
+@media all and (max-width: 1160px) {
+  .wrapper{
+      display: grid;
+      grid-template-columns: 0.6fr 3fr;
+      grid-template-rows: 280px auto;
+      grid-template-areas: 
+          "header header"
+          "aside article"
+          'aside footer';
+  }
+
+  header {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1.5fr;
+      /* grid-template-areas:
+          "clock empty-header weather"; */
+  }
+}
+
+@media all and (max-width: 880px) {
+  .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 280px 10vh auto;
+      grid-template-areas: 
+          "header"
+          "aside"
+          "article"
+          'footer';
+  }
+
+  header {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "weather"
+      "clock";
+  }
+
+  .clock {
+      display: flex;
+      justify-content: center;
+  }
+
+  aside {
+      /* background: url('../css/images/stripesh.jpg') center no-repeat; */
+      background-size: cover;
+  }
+
+  /* flows only within sidebar boundaries */
+  .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      position: sticky;
+      height: 10vh;
+      top: 0;
+  }
+
+  .menu li a {
+      /* text-align: center; */
+      align-self: center;
+  }
+
+  article {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "intro"
+      "map-info"
+      "map"
+      "tweets"
+      "crimes";
+  }
+}
+
+@media all and (max-width: 550px) {
+  .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 280px auto;
+      grid-template-areas: 
+          "header"
+          "article"
+          'footer';
+  }
+  aside {
+      display: none;
+  }
+}
+
+
+/* HEADER------------------------------------------------ */
+
+/* SIDEBAR------------------------------------------------ */
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 10px 0px ;
+  /* margin: 0 15px; */
+  /* max-width: 320px; */
+}
+
+.menu li a, #mapsBtn, #entBtn, #liqBtn {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  /* text-shadow: 0.5px 1px 1px rgb(15, 4, 165); */
+  color: rgb(251, 250, 252);
+  background: rgb(122, 236, 221);
+  border-radius: 5px;
+  padding: 0 5px;
+  margin: 0 15px;
+  text-align: center;
+  flex-grow: 1;
+
+}
+
+.menu li a:hover, #mapsBtn:hover, #entBtn:hover, #liqBtn:hover {
+  background: rgba(12, 28, 248, 0.705);
+  /* cursor: pointer; */
+}
+
+/* MAIN------------------------------------------------ */
+
+#mapsBtn, #entBtn, #liqBtn {
+  margin-top: 12px;
+}
+
+.form-line {
+  margin-top: 15px;
+}
+
+.iframeContainer {
+  box-shadow: -1px 3px 6px 0px rgb(176, 196, 226), 1px -1px 3px 0px rgb(218, 234, 248), 3px 3px 6px 0px rgb(177, 175, 177), -1px -1px 3px 0px rgb(221, 221, 221);
+  border: 1.5px, solid;
+  border-radius: 15px;
+}
+
+.buttons-under {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.iframe-parent {
+  overflow: auto!important;
+  -webkit-overflow-scrolling: touch!important;
+}
+
+.iframe-child {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.map-info, .map {
+  padding-bottom: 50px;
+}
+
+
+h1 {
+  text-align: center;
+}
