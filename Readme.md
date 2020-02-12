@@ -1,12 +1,11 @@
-# OLYMPIC DATA ANALYSIS 
-
-## Team Members: Kevin Clark, Rebekah Rowland, Amy Dach, Poonam Goel
+## How have the Olympics Changed? An Exploration of data from Athens 1896 to Rio 2016.
+Team Members: Kevin Clark, Rebekah Rowland, Amy Dach, Poonam Goel
 
 ![alt text](https://stillmed.olympic.org/media/Images/OlympicOrg/IOC/The_Organisation/The-Olympic-Rings/Olympic_rings_TM_c_IOC_All_rights_reserved_1.jpg?interpolation=lanczos-none&resize=1400:*)
 
 ## Project Description
 
-This project aims to create an app that can helps us understand how have the Olympics Changed Over Time .
+This project aims to create an interactive web application that showcases how the have the Olympics games have changes 
 
 Our app can be access at: https://olympic-medalists.herokuapp.com/
 
