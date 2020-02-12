@@ -5,7 +5,7 @@ Team Members: Kevin Clark, Rebekah Rowland, Amy Dach, Poonam Goel
 
 ## Project Description
 
-This project aims to create an interactive web application that showcases how the have the Olympics games have changed over 120 years. 
+This project aims to create an interactive web application that showcases how the Olympics games have changed over 120 years. 
 
 Our app can be accessed at: https://olympic-medalists.herokuapp.com/
 
