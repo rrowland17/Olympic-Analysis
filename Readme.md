@@ -14,23 +14,19 @@ Our app can be accessed at: https://olympic-medalists.herokuapp.com/
 https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results 
 ``` 
 ## Description:
-The dataset we found contains every male and female participant information that has competed in the Summer and Winter Olympic games since Athens 1896 up until Rio 2016. The data set is composed of two CSV files, one containing the athletes information (such as sex, age, event, year, and if they medaled) and the second containing the NOC (National Olympic Committee 3 letter code) and the country name. 
+The dataset we found contains every male and female participant information that has competed in the Summer and Winter Olympic games since Athens 1896 up until Rio 2016. The data set is composed of two CSV files: one containing the athletes information (such as sex, age, event, year, and if they medaled) and the second containing the NOC (National Olympic Committee 3 letter code) and the country name. 
 
-We chose this dataset because the raw looked clean and could provide many unique visualizations. We would like to show how the Olympics has changed over time, including the countries that win the most medals, and how the average dimensions of the Olympic athlete has changed over time.
-
-## Features:
-
-Our finished project help's people explore the Olympic data. 
+We chose this dataset because the raw data looked fairly clean and could provide many unique visualizations. We chose to investigate which countries have won the most medals over time utilizing maps and how the average dimensions of the Olympic athlete have changed using Tableau.
 
 ## Dependencies:
 
-* Python Flask 
+* Python 
+* Flask 
 * HTML/CSS
 * JavaScript
 * GeoJSON
 * Leaflet 
 * Mapbox
-* CSV
 * SQLLite
 * Tableau
 
@@ -40,7 +36,3 @@ Our finished project help's people explore the Olympic data.
 2. Click on buttons to explore, Tableau visualization to analyze olympian biometrics.  
 3. Explore the plotly map to analyze medals by country.
 4. Users can interactively explore biometrics through various filters and drop downs based on key data dimensions including sport, season, decade, and gender.
-
-## Deployment:
-
-* Heroku
