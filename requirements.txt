@@ -1,4 +1,4 @@
-certifi==2018.4.16
+certifi==2022.12.7
 beautifulsoup4==4.6.0
 matplotlib==2.2.2
 requests==2.20.0
